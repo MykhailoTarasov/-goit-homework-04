@@ -146,9 +146,12 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7),
-rgba(46, 47, 66, 0.7)),
-  url(../images/people-office\ 1.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
 }
 
 .hero-title {
@@ -221,20 +224,32 @@ rgba(46, 47, 66, 0.7)),
   flex-basis: calc((1128px - 3 * 24px) / 4);
 }
 
-.features .item::before {
+.features-btn {
+  height: 112px;
+  background-color: var(--btn-background);
+  justify-content: center;
+}
+
+.btn-icon {
+  width: 64px;
+  height: 64px;
+  
+}
+
+/* .features .item::before {
   background-color: var(--btn-background);
   display: block;
   content: '';
   height: 112px;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
-.features .item:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.svg)
-}
+/* .features .item:nth-child(1)::before {
+  background-image: url(../images/antenna\ 1.svg);
+} */
 
-.features .item:nth-child(2)::before {
+/* .features .item:nth-child(2)::before {
   background-image: url(../images/clock\ 1.svg)
 }
 
@@ -244,7 +259,7 @@ rgba(46, 47, 66, 0.7)),
 
 .features .item:nth-child(4)::before {
   background-image: url(../images/astronaut\ 1.svg)
-}
+} */
 
 .features .item:last-child {
   margin-right: 0;
@@ -318,6 +333,29 @@ rgba(46, 47, 66, 0.7)),
 .team-content {
   padding: 32px 0;
 }
+
+/* section5 customers */
+
+.customers-main {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.customers {
+  display: flex;
+}
+
+.customers-icon {
+  margin-right: 24px;
+  flex-basis: calc((1128px - 5 * 24px) / 6);
+}
+
+.customers-icon:last-child {
+  margin-right: 0;
+}
+
+
 
 /* .footer */
 
@@ -394,7 +432,8 @@ rgba(46, 47, 66, 0.7)),
 .filter.btn:focus {
   color: var(--white);
   background-color: var(--btn-pressed);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio {
