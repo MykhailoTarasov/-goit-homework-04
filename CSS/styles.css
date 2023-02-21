@@ -9,6 +9,10 @@
   --main-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --team-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  --customers-mane: #8e8f99;
+  --footer-social: rgba(255, 255, 255, 0.1);
+  --footer-sotial-hover: #31D0AA;
+  --portfolio-item-shadow: rgba(46, 47, 66, 0.08);
 }
 
 body {
@@ -332,8 +336,47 @@ img {
 }
 
 .team-content {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
+
+.social-team {
+  display: flex;
+  margin-top: 8px;
+}
+
+.social-item {
+  margin-right: 24px;
+  flex-basis: calc((292px - 3 * 24px) / 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  background-color: var(--logo-primary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover {
+  background-color: var(--btn-pressed);
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  
+}
+
+
 
 /* section5 customers */
 
@@ -350,7 +393,12 @@ img {
 .customers-icon {
   margin-right: 24px;
   flex-basis: calc((1128px - 5 * 24px) / 6);
-  display: block;
+  height: 88px;
+  border: 1px solid var(--customers-mane);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .customers-icon:last-child {
@@ -362,6 +410,11 @@ img {
 }
 
 /* .footer */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
 
 .footer {
   background-color: var(--color-primary);
@@ -379,6 +432,36 @@ img {
   line-height: 1.5;
   margin-top: 16px;
   max-width: 264px;
+}
+
+.footer-social {
+  margin-left: 120px;
+}
+
+.footer-social-link {
+  background-color: var(--footer-social);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-link:hover {
+  background-color: var(--footer-sotial-hover);
+}
+
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social-title {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.5;
+margin-bottom: 16px;
 }
 
 /* .portfolio */
@@ -450,6 +533,8 @@ img {
   margin-bottom: 48px;
 
   flex-basis: calc((1128px - 2 * 24px) / 3);
+
+  box-shadow: 0px 1px 6px var(--portfolio-item-shadow);
 }
 
 .card-content {
