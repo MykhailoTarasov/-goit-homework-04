@@ -224,16 +224,17 @@ img {
   flex-basis: calc((1128px - 3 * 24px) / 4);
 }
 
-.features-btn {
+.features-div {
   height: 112px;
   background-color: var(--btn-background);
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.btn-icon {
+.features-icon {
   width: 64px;
   height: 64px;
-  
 }
 
 /* .features .item::before {
@@ -349,13 +350,16 @@ img {
 .customers-icon {
   margin-right: 24px;
   flex-basis: calc((1128px - 5 * 24px) / 6);
+  display: block;
 }
 
 .customers-icon:last-child {
   margin-right: 0;
 }
 
-
+.customers-logo {
+  max-width: 100%;
+}
 
 /* .footer */
 
