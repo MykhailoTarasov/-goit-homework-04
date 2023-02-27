@@ -15,7 +15,8 @@
   --portfolio-link-small-shadow: rgba(46, 47, 66, 0.08);
   --portfolio-link-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    --portfolio-btn-shadow: rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --portfolio-btn-shadow: rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -230,6 +231,10 @@ img {
   flex-basis: calc((1128px - 3 * 24px) / 4);
 }
 
+.features .item:last-child {
+  margin-right: 0;
+}
+
 .features-div {
   height: 112px;
   background-color: var(--btn-background);
@@ -267,10 +272,6 @@ img {
 .features .item:nth-child(4)::before {
   background-image: url(../images/astronaut\ 1.svg)
 } */
-
-.features .item:last-child {
-  margin-right: 0;
-}
 
 .features-list {
   font-size: 20px;
@@ -401,14 +402,14 @@ img {
 }
 
 .customers-link {
-  border: 1px solid var(--customers-main);
-  border-radius: 4px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
+  border: 1px solid var(--customers-main);
+  border-radius: 4px;
   color: var(--customers-main);
+  align-items: center;
+  justify-content: center;
 }
 
 .customers-link:hover,
@@ -421,7 +422,7 @@ img {
   width: 104px;
   height: 56px;
   fill: currentColor;
-} 
+}
 
 /* .footer */
 
